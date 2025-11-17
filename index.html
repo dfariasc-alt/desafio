@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Completa</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      text-align: left;
+    }
+
+    header, footer {
+      text-align: left;
+      padding: 15px;
+      border-bottom: 2px solid black;
+    }
+
+    footer {
+      border-top: 2px solid black;
+      margin-top: 40px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    th, td {
+      border: 2px double #555;
+      padding: 6px;
+      text-align: left;
+    }
+
+    caption {
+      font-weight: bold;
+      margin-bottom: 10px;
+      text-align: left;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Página Completa</h1>
+  <p>Horario · Formulario · Audio · Video</p>
+</header>
+
+<main>
+
+  <!-- HORARIO -->
+  <section>
+    <h2>Horario de Clases</h2>
+
+    <table>
+      <caption>Horario de Tercero "A" - Matutino SISTEMAS DE INFORMACIÓN</caption>
+
+      <thead>
+        <tr>
+          <th>Hora</th>
+          <th>Lunes</th>
+          <th>Martes</th>
+          <th>Miércoles</th>
+          <th>Jueves</th>
+          <th>Viernes</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>7:15 - 8:15</td>
+          <td>Materia Homologada</td>
+          <td>Arquitectura del Computador<br>Hugo J. Guerrero</td>
+          <td>Desarrollo Basado en Plataformas<br>Fredy M. Jordán</td>
+          <td>Desarrollo Basado en Plataformas<br>Fredy M. Jordán</td>
+          <td>Arquitectura del Computador<br>Hugo J. Guerrero</td>
+        </tr>
+
+        <tr>
+          <td>8:15 - 9:15</td>
+          <td>Materia Homologada</td>
+          <td>Arquitectura del Computador<br>Hugo J. Guerrero</td>
+          <td>Desarrollo Basado en Plataformas<br>Fredy M. Jordán</td>
+          <td>Desarrollo Basado en Plataformas<br>Fredy M. Jordán</td>
+          <td>Arquitectura del Computador<br>Hugo J. Guerrero</td>
+        </tr>
+
+        <tr>
+          <td>9:15 - 10:15</td>
+          <td>Cálculo de Varias Variables<br>Milton F. Peñaherrera</td>
+          <td>Arquitectura del Computador<br>Hugo J. Guerrero</td>
+          <td>Programación Orientada a Objetos<br>Nelly K. Esparza</td>
+          <td>Desarrollo Basado en Plataformas<br>Fredy M. Jordán</td>
+          <td>Materia Homologada</td>
+        </tr>
+
+        <tr>
+          <td>10:30 - 11:30</td>
+          <td>Cálculo de Varias Variables<br>Milton F. Peñaherrera</td>
+          <td>Programación Orientada a Objetos<br>Nelly K. Esparza</td>
+          <td>Programación Orientada a Objetos<br>Nelly K. Esparza</td>
+          <td>Cálculo de Varias Variables<br>Milton F. Peñaherrera</td>
+          <td>Materia Homologada</td>
+        </tr>
+
+        <tr>
+          <td>11:30 - 12:30</td>
+          <td>Cálculo de Varias Variables<br>Milton F. Peñaherrera</td>
+          <td>Programación Orientada a Objetos<br>Nelly K. Esparza</td>
+          <td></td>
+          <td>Cálculo de Varias Variables<br>Milton F. Peñaherrera</td>
+          <td>Materia Homologada</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <td colspan="6">
+            Nota: Las horas marcadas como “Materia Homologada” son asignaturas aprobadas con anterioridad.
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
+
+  <!-- FORMULARIO -->
+  <section>
+    <h2>Formulario de Registro</h2>
+
+    <form action="#" method="POST">
+
+      <label for="nombre">Nombre completo:</label><br>
+      <input type="text" id="nombre" name="nombre" required><br><br>
+
+      <label for="correo">Correo electrónico:</label><br>
+      <input type="email" id="correo" name="correo" required><br><br>
+
+      <label for="telefono">Teléfono:</label><br>
+      <input type="tel" id="telefono" name="telefono" placeholder="0999999999" required><br><br>
+
+      <label for="edad">Edad:</label><br>
+      <input type="number" id="edad" name="edad" min="1" max="100" required><br><br>
+
+      <label for="nacimiento">Fecha de nacimiento:</label><br>
+      <input type="date" id="nacimiento" name="nacimiento" required><br><br>
+
+      <label for="clave">Contraseña:</label><br>
+      <input type="password" id="clave" name="clave" minlength="6" required><br><br>
+
+      <label for="pais">País:</label><br>
+      <select id="pais" name="pais" required>
+        <option value="">Seleccione</option>
+        <option value="ecuador">Ecuador</option>
+        <option value="peru">Perú</option>
+        <option value="colombia">Colombia</option>
+        <option value="chile">Chile</option>
+      </select><br><br>
+
+      <label>
+        <input type="checkbox" name="terminos" required>
+        Acepto los términos y condiciones
+      </label>
+      <br><br>
+
+      <button type="submit">Enviar</button>
+
+    </form>
+  </section>
+
+  <!-- MULTIMEDIA -->
+  <section>
+    <h2>Contenido Multimedia</h2>
+
+    <p><strong>Audio:</strong></p>
+    <audio controls>
+      <source src="audioo.mp3" type="audio/mpeg">
+      Tu navegador no soporta audio.
+    </audio>
+
+    <p><strong>Video:</strong></p>
+    <video width="400" controls loop poster="poster.jpg">
+      <source src="videooo.mp4" type="video/mp4">
+      Tu navegador no soporta video.
+    </video>
+  </section>
+
+</main>
+
+<footer>
+  <p>&copy; 2025 Dillard Andres Farias Cando, FAFI, CSI. Todos los derechos reservados.</p>
+</footer>
+
+</body>
+</html>
